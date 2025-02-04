@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+
 app = FastAPI()
 
 @app.get("/")
@@ -38,3 +39,5 @@ async def math(opm: Operacoes):
         return {"Divisão": divisao}
     else:
         return {"Insira um valor válido, ou acesse 'http://localhost:8000/docs' para acessar a documentação da api"}
+    
+ 
